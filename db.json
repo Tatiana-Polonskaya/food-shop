@@ -34,70 +34,70 @@
             "title": "pizza 1",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 1",
-            "price": 0
+            "price": 500
         },
         {
             "id": 1,
             "title": "pizza 2",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 2",
-            "price": 0
+            "price": 500
         },
         {
             "id": 2,
             "title": "pizza 3",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 3",
-            "price": 0
+            "price": 500
         },
         {
             "id": 3,
             "title": "pizza 4",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 4",
-            "price": 0
+            "price": 500
         },
         {
             "id": 4,
             "title": "pizza 5",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 5",
-            "price": 0
+            "price": 500
         },
         {
             "id": 5,
             "title": "pizza 6",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 6",
-            "price": 0
+            "price": 500
         },
         {
             "id": 6,
             "title": "pizza 7",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 7",
-            "price": 0
+            "price": 500
         },
         {
             "id": 7,
             "title": "pizza 8",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 8",
-            "price": 0
+            "price": 500
         },
         {
             "id": 8,
             "title": "pizza 9",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 9",
-            "price": 0
+            "price": 500
         },
         {
             "id": 9,
             "title": "pizza 10",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 10",
-            "price": 0
+            "price": 500
         }
     ],
     "sushi": [
@@ -106,70 +106,70 @@
             "title": "sushi 1",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 1",
-            "price": 0
+            "price": 500
         },
         {
             "id": 1,
             "title": "sushi 2",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 2",
-            "price": 0
+            "price": 500
         },
         {
             "id": 2,
             "title": "sushi 3",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 3",
-            "price": 0
+            "price": 500
         },
         {
             "id": 3,
             "title": "sushi 4",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 4",
-            "price": 0
+            "price": 500
         },
         {
             "id": 4,
             "title": "sushi 5",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 5",
-            "price": 0
+            "price": 500
         },
         {
             "id": 5,
             "title": "sushi 6",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 6",
-            "price": 0
+            "price": 500
         },
         {
             "id": 6,
             "title": "sushi 7",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 7",
-            "price": 0
+            "price": 500
         },
         {
             "id": 7,
             "title": "sushi 8",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 8",
-            "price": 0
+            "price": 500
         },
         {
             "id": 8,
             "title": "sushi 9",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 9",
-            "price": 0
+            "price": 500
         },
         {
             "id": 9,
             "title": "sushi 10",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 10",
-            "price": 0
+            "price": 500
         }
     ],
     "drinks": [
@@ -178,70 +178,70 @@
             "title": "drinks 1",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 1",
-            "price": 0
+            "price": 500
         },
         {
             "id": 1,
             "title": "drinks 2",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 2",
-            "price": 0
+            "price": 500
         },
         {
             "id": 2,
             "title": "drinks 3",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 3",
-            "price": 0
+            "price": 500
         },
         {
             "id": 3,
             "title": "drinks 4",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 4",
-            "price": 0
+            "price": 500
         },
         {
             "id": 4,
             "title": "drinks 5",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 5",
-            "price": 0
+            "price": 500
         },
         {
             "id": 5,
             "title": "drinks 6",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 6",
-            "price": 0
+            "price": 500
         },
         {
             "id": 6,
             "title": "drinks 7",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 7",
-            "price": 0
+            "price": 500
         },
         {
             "id": 7,
             "title": "drinks 8",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 8",
-            "price": 0
+            "price": 500
         },
         {
             "id": 8,
             "title": "drinks 9",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 9",
-            "price": 0
+            "price": 500
         },
         {
             "id": 9,
             "title": "drinks 10",
             "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
             "description": "drinks 10",
-            "price": 0
+            "price": 500
         }
     ],
     "desserts": [
@@ -250,70 +250,70 @@
             "title": "desserts 1",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 1",
-            "price": 0
+            "price": 500
         },
         {
             "id": 1,
             "title": "desserts 2",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 2",
-            "price": 0
+            "price": 500
         },
         {
             "id": 2,
             "title": "desserts 3",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 3",
-            "price": 0
+            "price": 500
         },
         {
             "id": 3,
             "title": "desserts 4",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 4",
-            "price": 0
+            "price": 500
         },
         {
             "id": 4,
             "title": "desserts 5",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 5",
-            "price": 0
+            "price": 500
         },
         {
             "id": 5,
             "title": "desserts 6",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 6",
-            "price": 0
+            "price": 500
         },
         {
             "id": 6,
             "title": "desserts 7",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 7",
-            "price": 0
+            "price": 500
         },
         {
             "id": 7,
             "title": "desserts 8",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 8",
-            "price": 0
+            "price": 500
         },
         {
             "id": 8,
             "title": "desserts 9",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 9",
-            "price": 0
+            "price": 500
         },
         {
             "id": 9,
             "title": "desserts 10",
             "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
             "description": "desserts 10",
-            "price": 0
+            "price": 500
         }
     ]
 }
