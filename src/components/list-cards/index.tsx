@@ -1,5 +1,5 @@
-import Card from "@/shared/ui/card/card";
-import { Foods } from "../../types";
+import { Foods } from "@/types/food";
+import Card from "../card";
 
 type ListFoodProps = {
     foods: Foods;
@@ -11,7 +11,7 @@ export function ListFood({ foods }: ListFoodProps) {
         <div className="flex flex-wrap flex-row shrink justify-self-center place-content-center content-center gap-10">
             {/* <pre>{JSON.stringify(foods)}</pre> */}
             {foods.map((food) => (
-                <Card key={food.id} {...food} price={food.price + ' р.'}></Card>
+                <Card key={food.id} {...food} price={food.price + " р."}></Card>
             ))}
         </div>
     );
