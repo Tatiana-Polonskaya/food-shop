@@ -1,6 +1,8 @@
 
-import { Foods, ListFood } from "@/entities/food";
+
+import { ListFood } from "@/components/list-cards";
 import MainLayout from "@/layouts/main-layout";
+import { Foods } from "@/types/food";
 import { NextPageContext } from "next";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -32,7 +34,7 @@ export default function Posts({
     return (
         <MainLayout title="Posts Page">
             <h1>Posts</h1>
-            <ul>
+            {/* <ul>
                 {posts && posts.map((post) => (
                     <li key={post.id}>
                         <Link href={`/posts/[id]`} as={`/posts/${post.id}`}>
@@ -40,7 +42,7 @@ export default function Posts({
                         </Link>
                     </li>
                 ))}
-            </ul>
+            </ul> */}
             <ListFood foods={foods} />
         </MainLayout>
     );

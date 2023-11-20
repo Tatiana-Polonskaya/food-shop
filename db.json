@@ -23,10 +23,10 @@
     ],
     "about": { "title": "Страница про нас" },
     "categories": [
-        { "id": "0", "title": "Пицца" },
-        { "id": "1", "title": "Суши" },
-        { "id": "2", "title": "Напитки" },
-        { "id": "3", "title": "Десерты" }
+        { "id": "0", "title": "Пицца", "link": "/pizza" },
+        { "id": "1", "title": "Суши", "link": "/sushi" },
+        { "id": "2", "title": "Напитки", "link": "/drinks" },
+        { "id": "3", "title": "Десерты", "link": "/desserts" }
     ],
     "pizza": [
         {

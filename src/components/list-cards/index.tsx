@@ -1,5 +1,6 @@
 import { Foods } from "@/types/food";
 import Card from "../card";
+import { Box } from "@mui/material";
 
 type ListFoodProps = {
     foods: Foods;
@@ -8,11 +9,17 @@ type ListFoodProps = {
 export function ListFood({ foods }: ListFoodProps) {
     console.log(foods.forEach((el) => el.id));
     return (
-        <div className="flex flex-wrap flex-row shrink justify-self-center place-content-center content-center gap-10">
-            {/* <pre>{JSON.stringify(foods)}</pre> */}
+        <Box
+            display="flex"
+            flexDirection="row"
+            flexWrap="wrap"
+            justifyContent="center"
+            alignItems="center"
+            gap={10}
+        >
             {foods.map((food) => (
                 <Card key={food.id} {...food} price={food.price + " р."}></Card>
             ))}
-        </div>
+        </Box>
     );
 }
