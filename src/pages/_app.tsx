@@ -7,6 +7,21 @@ import {
 } from "@tanstack/react-query";
 
 import "@/styles/globals.css";
+import { ThemeProvider, createTheme } from "@mui/material";
+import { green, orange } from "@mui/material/colors";
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: orange[600],
+            light: "#fff",
+            contrastText: "black",
+        },
+        secondary: {
+            main: green[500],
+        },
+    },
+});
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     const [queryClient] = useState(
@@ -24,7 +39,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <>
             <QueryClientProvider client={queryClient}>
                 <HydrationBoundary state={pageProps.dehydratedState}>
-                    <Component {...pageProps} />
+                    <ThemeProvider theme={theme}>
+                        <Component {...pageProps} />
+                    </ThemeProvider>
                 </HydrationBoundary>
             </QueryClientProvider>
         </>

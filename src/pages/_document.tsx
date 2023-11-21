@@ -14,7 +14,6 @@ export default function Document() {
                     rel="icon"
                     href="https://www.svgrepo.com/show/56157/pizza.svg"
                 />
-                
             </Head>
             <body>
                 <Main />
