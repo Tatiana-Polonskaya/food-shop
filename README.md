@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Магазин еды на NextJS
 
-## Getting Started
+**О проекте:**\
+  Сайт для получения и вывода доступной готовой еды в сервисе, полученных с помощью JSON Server.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Функционал:**
+- Главная страница:
+  - Вывод всех категорий продукции и возможность выбора  
+  - Вывод всей продукции согласно выбранной категории
+  - Сортировка элементов по цене/названию
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+----
+## Содержание
+- [Запуск проекта](#запуск-проекта)
+- [Архитектура проекта](#архитектура-проекта)
+- [Технологии](#технологии)
+- [API](#api)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Запуск проекта
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `npm install` - Установка зависимостей
+- `npm run dev` - Запуск проекта для разработки
+- `npm run build` - Сборка проекта
 
-## Learn More
+## Архитектура проекта
 
-To learn more about Next.js, take a look at the following resources:
+Структура проекта соответствует стандартной структуре проектов Next.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/components`: содержит UI компоненты на основе React, такие как кнопка, карточка, список.
+- `src/pages`: отвечает за создание маршрутизации в приложении на основе файлов.
+- `src/types`: содержит описание всех глобальных типов.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Дополнительно созданы директории `src/layouts` и `src/styles`, которые содержат layout и глобальные стили приложения соответственно.
 
-## Deploy on Vercel
+## Технологии
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next](https://nextjs.org/)
+- [React](https://react.dev/blog/2023/03/16/introducing-react-dev)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TanStack Query](https://tanstack.com/query/latest)
+- [MUI](https://mui.com/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## API
+
+Используется собственное API, созданное с помощью:
+
+- [JSON Server](https://www.npmjs.com/package/json-server)
