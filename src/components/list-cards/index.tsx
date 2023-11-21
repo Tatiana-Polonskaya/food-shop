@@ -7,7 +7,7 @@ type ListFoodProps = {
 };
 
 export function ListFood({ foods }: ListFoodProps) {
-    console.log(foods);
+
     return (
         <Box
             display="flex"

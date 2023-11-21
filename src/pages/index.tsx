@@ -1,25 +1,22 @@
-import MainLayout from "@/layouts/main-layout";
-import { Categories, Category } from "@/types/category";
-import CustomButton from "@/components/button";
 import { useMemo, useState } from "react";
-import { ListFood } from "@/components/list-cards";
 import { QueryClient, dehydrate, useQuery } from "@tanstack/react-query";
-import Filter from "@/components/filter";
-import { Food, Foods } from "@/types/food";
-import { Box, Typography } from "@mui/material";
+
+import MainLayout from "@/layouts/main-layout";
+
+import { getCategories, getFoods } from "@/api";
+
+import { Categories, Category } from "@/types/category";
+import { Food } from "@/types/food";
 import { Sorted } from "@/types/sorting";
 
-async function getCategories() {
-    return (await fetch(`${process.env.API_URL}/categories`).then((res) =>
-        res.json()
-    )) as Categories;
-}
+import CustomButton from "@/components/button";
+import { ListFood } from "@/components/list-cards";
+import Sorting from "@/components/sorting";
+import Filter from "@/components/filter";
+import Loading from "@/components/loader";
 
-async function getFoods(nameFoods: string) {
-    return (await fetch(`${process.env.API_URL}/${nameFoods}`).then((res) =>
-        res.json()
-    )) as Foods;
-}
+import { Box, Typography } from "@mui/material";
+
 
 export default function Home() {
     const { data: categories } = useQuery<Categories>({
@@ -38,21 +35,35 @@ export default function Home() {
     });
 
     const [typeSorting, setTypeSorting] = useState(Sorted.ABS);
-
-    const handleFilterClick = (typeSorting: Sorted) => {
+    const handleSortingClick = (typeSorting: Sorted) => {
         setTypeSorting(typeSorting);
+    };
+
+    const [minPrice, setMinPrice] = useState<number>(0);
+    const [maxPrice, setMaxPrice] = useState<number>(0);
+
+    const handleChangeInterval = (minValue: number, maxValue: number) => {
+        setMinPrice(minValue);
+        setMaxPrice(maxValue);
     };
 
     const foods = useMemo(() => {
         if (serverFoods) {
+            let arr = serverFoods;
+            if (minPrice !== 0 || maxPrice !== 0) {
+                console.log(minPrice, maxPrice);
+                arr = arr.filter(
+                    (el) => el.price >= minPrice! && el.price <= maxPrice!
+                );
+            }
             const filterFunction =
                 typeSorting === Sorted.ABS
                     ? (a: Food, b: Food) => a.price - b.price
                     : (a: Food, b: Food) => b.price - a.price;
 
-            return serverFoods.sort(filterFunction);
+            return arr.sort(filterFunction);
         }
-    }, [serverFoods, typeSorting]);
+    }, [serverFoods, typeSorting, minPrice, maxPrice]);
 
     return (
         <MainLayout title="Food Shop | Catalog">
@@ -96,14 +107,26 @@ export default function Home() {
                     </Typography>
 
                     <Filter
+                        minNumber={minPrice}
+                        maxNumber={maxPrice}
+                        setInterval={handleChangeInterval}
+                    />
+
+                    <Sorting
                         title="Цена"
                         currentSort={typeSorting}
-                        onClick={handleFilterClick}
+                        onClick={handleSortingClick}
                     />
                 </Box>
 
                 {foods && <ListFood foods={foods} />}
-                {isLoading && <div>Loading ...</div>}
+                {foods?.length === 0 && !isLoading && (
+                    <Typography padding={5} align="center">
+                        Ничего не найдено! :( <br /> Попробуйте изменить условия
+                        фильтра
+                    </Typography>
+                )}
+                {isLoading && <Loading />}
             </Box>
         </MainLayout>
     );
