@@ -1,20 +1,9 @@
-import { Button, ButtonProps, Typography, styled } from "@mui/material";
-import { orange } from "@mui/material/colors";
+import { Button, Typography } from "@mui/material";
 
 type Props = {
     title: string;
     onClick: () => void;
 };
-
-const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
-    color: orange[500],
-    backgroundColor: "white",
-    borderColor: orange[500],
-    "&:hover": {
-        backgroundColor: "#ffff",
-        borderColor: orange[500],
-    },
-}));
 
 export default function CustomButton({ title, onClick }: Props) {
     return (

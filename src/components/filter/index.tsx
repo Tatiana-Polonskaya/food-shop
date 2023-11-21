@@ -1,26 +1,24 @@
 import { Button } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import { useState } from "react";
+import { Sorted } from "@/types/sorting";
 
 type Props = {
     title: string;
-    onClick: (sortedByAbs: boolean) => void;
+    currentSort: Sorted;
+    onClick: (typeSorting: Sorted) => void;
 };
 
-export default function Filter({ title, onClick }: Props) {
-    const [sortedByAbs, setSortedByAbs] = useState(true);
+export default function Filter({ title, currentSort,  onClick }: Props) {
 
     const handleClick = () => {
-        setSortedByAbs((prev) => !prev);
-        
-        onClick(!sortedByAbs);
+        onClick(currentSort === Sorted.ABS ? Sorted.DESC : Sorted.ABS);
     };
 
     return (
         <Button onClick={handleClick}>
             {title}
-            {sortedByAbs ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+            {currentSort ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
         </Button>
     );
 }

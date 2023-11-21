@@ -5,16 +5,26 @@ import { useMemo, useState } from "react";
 import { ListFood } from "@/components/list-cards";
 import { QueryClient, dehydrate, useQuery } from "@tanstack/react-query";
 import Filter from "@/components/filter";
-import { Food } from "@/types/food";
-import { Box } from "@mui/material";
+import { Food, Foods } from "@/types/food";
+import { Box, Typography } from "@mui/material";
+import { Sorted } from "@/types/sorting";
+
+async function getCategories() {
+    return (await fetch(`${process.env.API_URL}/categories`).then((res) =>
+        res.json()
+    )) as Categories;
+}
+
+async function getFoods(nameFoods: string) {
+    return (await fetch(`${process.env.API_URL}/${nameFoods}`).then((res) =>
+        res.json()
+    )) as Foods;
+}
 
 export default function Home() {
     const { data: categories } = useQuery<Categories>({
         queryKey: ["categories"],
-        queryFn: () =>
-            fetch(`${process.env.API_URL}/categories`).then((res) =>
-                res.json()
-            ),
+        queryFn: () => getCategories(),
     });
 
     const [activeCategory, setActiveCategory] = useState<Category>(
@@ -23,31 +33,29 @@ export default function Home() {
 
     const { data: serverFoods, isLoading } = useQuery({
         queryKey: ["foods", activeCategory.link],
-        queryFn: () =>
-            fetch(`${process.env.API_URL}/${activeCategory.link}`).then((res) =>
-                res.json()
-            ),
+        queryFn: () => getFoods(activeCategory.link),
         enabled: !!activeCategory,
     });
 
-    const [sortedByAbs, setSortedByAbs] = useState(true);
+    const [typeSorting, setTypeSorting] = useState(Sorted.ABS);
+
+    const handleFilterClick = (typeSorting: Sorted) => {
+        setTypeSorting(typeSorting);
+    };
 
     const foods = useMemo(() => {
         if (serverFoods) {
-            const filterFunction = sortedByAbs
-                ? (a: Food, b: Food) => a.price - b.price
-                : (a: Food, b: Food) => b.price - a.price;
-            console.log(filterFunction, serverFoods.sort(filterFunction));
+            const filterFunction =
+                typeSorting === Sorted.ABS
+                    ? (a: Food, b: Food) => a.price - b.price
+                    : (a: Food, b: Food) => b.price - a.price;
+
             return serverFoods.sort(filterFunction);
         }
-    }, [serverFoods, sortedByAbs]);
-
-    const handleFilterClick = (sortedByAbs: boolean) => {
-        setSortedByAbs(sortedByAbs);
-    };
+    }, [serverFoods, typeSorting]);
 
     return (
-        <MainLayout title="Home Page">
+        <MainLayout title="Food Shop | Catalog">
             <Box
                 paddingLeft={5}
                 paddingTop={3}
@@ -67,10 +75,7 @@ export default function Home() {
                         ></CustomButton>
                     ))}
             </Box>
-            <Box
-                padding={5}
-                paddingTop={0}
-            >
+            <Box padding={5} paddingTop={0}>
                 <Box
                     padding={2}
                     display="flex"
@@ -80,9 +85,21 @@ export default function Home() {
                     alignItems="center"
                     gap={2}
                 >
-                    <h1>{activeCategory && activeCategory.title}</h1>
+                    <Typography
+                        variant="h4"
+                        component="h2"
+                        fontWeight={600}
+                        padding={2}
+                        flexGrow={1}
+                    >
+                        {activeCategory && activeCategory.title}
+                    </Typography>
 
-                    <Filter title="Цена" onClick={handleFilterClick} />
+                    <Filter
+                        title="Цена"
+                        currentSort={typeSorting}
+                        onClick={handleFilterClick}
+                    />
                 </Box>
 
                 {foods && <ListFood foods={foods} />}
@@ -97,21 +114,15 @@ export async function getServerSideProps() {
 
     const categories = await queryClient.fetchQuery<Categories>({
         queryKey: ["categories"],
-        queryFn: () =>
-            fetch(`${process.env.API_URL}/categories`).then((res) =>
-                res.json()
-            ),
+        queryFn: () => getCategories(),
     });
 
-    const first_categories = categories![0];
+    const first_categories = categories![0].link;
 
     if (first_categories)
         await queryClient.prefetchQuery({
-            queryKey: ["foods", first_categories!.link],
-            queryFn: () =>
-                fetch(`${process.env.API_URL}/${first_categories!.link}`).then(
-                    (res) => res.json()
-                ),
+            queryKey: ["foods", first_categories],
+            queryFn: () => getFoods(first_categories),
         });
 
     return {

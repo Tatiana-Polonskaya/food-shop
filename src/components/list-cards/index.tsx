@@ -1,6 +1,6 @@
 import { Foods } from "@/types/food";
-import Card from "../card";
 import { Box } from "@mui/material";
+import Card from "../card";
 
 type ListFoodProps = {
     foods: Foods;
