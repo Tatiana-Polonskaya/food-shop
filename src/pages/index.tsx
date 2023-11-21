@@ -6,6 +6,7 @@ import { ListFood } from "@/components/list-cards";
 import { QueryClient, dehydrate, useQuery } from "@tanstack/react-query";
 import Filter from "@/components/filter";
 import { Food } from "@/types/food";
+import { Box } from "@mui/material";
 
 export default function Home() {
     const { data: categories } = useQuery<Categories>({
@@ -36,7 +37,7 @@ export default function Home() {
             const filterFunction = sortedByAbs
                 ? (a: Food, b: Food) => a.price - b.price
                 : (a: Food, b: Food) => b.price - a.price;
-
+            console.log(filterFunction, serverFoods.sort(filterFunction));
             return serverFoods.sort(filterFunction);
         }
     }, [serverFoods, sortedByAbs]);
@@ -47,24 +48,46 @@ export default function Home() {
 
     return (
         <MainLayout title="Home Page">
-            <Filter title="Цена" onClick={handleFilterClick} />
-            {categories &&
-                categories.map((el) => (
-                    <CustomButton
-                        key={el.id}
-                        title={el.title}
-                        onClick={() => setActiveCategory(el)}
-                    ></CustomButton>
-                ))}
+            <Box
+                paddingLeft={5}
+                paddingTop={3}
+                display="flex"
+                flexDirection="row"
+                flexWrap="wrap"
+                justifyContent="flex-start"
+                alignItems="center"
+                gap={2}
+            >
+                {categories &&
+                    categories.map((el) => (
+                        <CustomButton
+                            key={el.id}
+                            title={el.title}
+                            onClick={() => setActiveCategory(el)}
+                        ></CustomButton>
+                    ))}
+            </Box>
+            <Box
+                paddingLeft={5}
+                paddingRight={5}
+            >
+                <Box
+                    padding={2}
+                    display="flex"
+                    flexDirection="row"
+                    flexWrap="wrap"
+                    justifyContent="space-between"
+                    alignItems="center"
+                    gap={2}
+                >
+                    <h1>{activeCategory && activeCategory.title}</h1>
 
-            <div className="p-4 sm:ml-64">
-                <h1 className="text-3xl font-bold">
-                    {activeCategory && activeCategory.title}
-                </h1>
-            </div>
+                    <Filter title="Цена" onClick={handleFilterClick} />
+                </Box>
 
-            {foods && <ListFood foods={foods} />}
-            {isLoading && <div>Loading ...</div>}
+                {foods && <ListFood foods={foods} />}
+                {isLoading && <div>Loading ...</div>}
+            </Box>
         </MainLayout>
     );
 }

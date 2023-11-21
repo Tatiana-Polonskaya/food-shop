@@ -13,7 +13,8 @@ export default function Filter({ title, onClick }: Props) {
 
     const handleClick = () => {
         setSortedByAbs((prev) => !prev);
-        onClick(sortedByAbs);
+        
+        onClick(!sortedByAbs);
     };
 
     return (

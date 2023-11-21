@@ -1,5 +1,5 @@
 import { Button, ButtonProps, Typography, styled } from "@mui/material";
-import { purple, grey, orange } from "@mui/material/colors";
+import { orange } from "@mui/material/colors";
 
 type Props = {
     title: string;
@@ -18,12 +18,8 @@ const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
 
 export default function CustomButton({ title, onClick }: Props) {
     return (
-        <ColorButton
-            variant="outlined"
-            onClick={onClick}
-            size="medium"
-        >
+        <Button variant="outlined" onClick={onClick} size="medium">
             <Typography>{title}</Typography>
-        </ColorButton>
+        </Button>
     );
 }
