@@ -106,14 +106,14 @@
             "title": "sushi 1",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 1",
-            "price": 500
+            "price": 300
         },
         {
             "id": 1,
             "title": "sushi 2",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 2",
-            "price": 500
+            "price": 400
         },
         {
             "id": 2,
@@ -127,120 +127,120 @@
             "title": "sushi 4",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 4",
-            "price": 500
+            "price": 600
         },
         {
             "id": 4,
             "title": "sushi 5",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 5",
-            "price": 500
+            "price": 700
         },
         {
             "id": 5,
             "title": "sushi 6",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 6",
-            "price": 500
+            "price": 800
         },
         {
             "id": 6,
             "title": "sushi 7",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 7",
-            "price": 500
+            "price": 900
         },
         {
             "id": 7,
             "title": "sushi 8",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 8",
-            "price": 500
+            "price": 1000
         },
         {
             "id": 8,
             "title": "sushi 9",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 9",
-            "price": 500
+            "price": 1100
         },
         {
             "id": 9,
             "title": "sushi 10",
             "imageLink": "https://catherineasquithgallery.com/uploads/posts/2021-03/1614591491_1-p-rolli-na-belom-fone-1.jpg",
             "description": "sushi 10",
-            "price": 500
+            "price": 1200
         }
     ],
     "drinks": [
         {
             "id": 0,
             "title": "drinks 1",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 1",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 1",
+            "price": 50
         },
         {
             "id": 1,
             "title": "drinks 2",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 2",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 2",
+            "price": 100
         },
         {
             "id": 2,
             "title": "drinks 3",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 3",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 3",
+            "price": 150
         },
         {
             "id": 3,
             "title": "drinks 4",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 4",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 4",
+            "price": 200
         },
         {
             "id": 4,
             "title": "drinks 5",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 5",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 5",
+            "price": 250
         },
         {
             "id": 5,
             "title": "drinks 6",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 6",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 6",
+            "price": 300
         },
         {
             "id": 6,
             "title": "drinks 7",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 7",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 7",
+            "price": 350
         },
         {
             "id": 7,
             "title": "drinks 8",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 8",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 8",
+            "price": 400
         },
         {
             "id": 8,
             "title": "drinks 9",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 9",
-            "price": 500
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 9",
+            "price": 450
         },
         {
             "id": 9,
             "title": "drinks 10",
-            "imageLink": "https://main-cdn.sbermegamarket.ru/hlr-system/-62/490/414/111/120/58/100044471378b0.jpg",
-            "description": "drinks 10",
+            "imageLink": "https://stroukomfort.ru/wa-data/public/shop/products/74/50/15074/images/15703/15703.970.jpg",
+            "description": "drinks drinks drinks drinks drinks 10",
             "price": 500
         }
     ],
@@ -248,72 +248,72 @@
         {
             "id": 0,
             "title": "desserts 1",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 1",
-            "price": 500
+            "price": 175
         },
         {
             "id": 1,
             "title": "desserts 2",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 2",
-            "price": 500
+            "price": 200
         },
         {
             "id": 2,
             "title": "desserts 3",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 3",
-            "price": 500
+            "price": 225
         },
         {
             "id": 3,
             "title": "desserts 4",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 4",
-            "price": 500
+            "price": 250
         },
         {
             "id": 4,
             "title": "desserts 5",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 5",
-            "price": 500
+            "price": 275
         },
         {
             "id": 5,
             "title": "desserts 6",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 6",
-            "price": 500
+            "price": 300
         },
         {
             "id": 6,
             "title": "desserts 7",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 7",
-            "price": 500
+            "price": 325
         },
         {
             "id": 7,
             "title": "desserts 8",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 8",
-            "price": 500
+            "price": 350
         },
         {
             "id": 8,
             "title": "desserts 9",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 9",
-            "price": 500
+            "price": 375
         },
         {
             "id": 9,
             "title": "desserts 10",
-            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
+            "imageLink": "https://on-desktop.com/wps/2021Food___Cakes_and_Sweet_Dessert_pasta_with_raspberries_on_a_white_plate_150652_.jpg",
             "description": "desserts 10",
-            "price": 500
+            "price": 400
         }
     ]
 }

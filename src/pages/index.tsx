@@ -68,8 +68,8 @@ export default function Home() {
                     ))}
             </Box>
             <Box
-                paddingLeft={5}
-                paddingRight={5}
+                padding={5}
+                paddingTop={0}
             >
                 <Box
                     padding={2}

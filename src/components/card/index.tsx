@@ -22,21 +22,26 @@ export default function MyCard({
     const titleUpperFisrt = title[0].toUpperCase() + title.slice(1);
 
     return (
-        <Card sx={{ borderRadius: "10px" }}>
+        <Card sx={{ borderRadius: "10px", maxWidth: "200px" }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    height="200"
-                    width="200"
+                    height={"auto"}
                     image={imageLink}
                     alt={title}
+                    sx={{
+                        width: "auto",
+                        maxWidth: "200px",
+                        maxHeight: "180px",
+                        margin: "0 auto",
+                    }}
                 />
                 <CardContent>
                     <Typography
                         variant="h6"
                         component="h2"
                         align="center"
-                        color={"green"}
+                        color={"secondary"}
                     >
                         {price}
                     </Typography>
