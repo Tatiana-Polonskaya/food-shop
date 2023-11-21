@@ -19,6 +19,7 @@ const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
 export default function CustomButton({ title, onClick }: Props) {
     return (
         <ColorButton
+            variant="outlined"
             onClick={onClick}
             size="medium"
         >

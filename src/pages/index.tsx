@@ -1,35 +1,78 @@
-import Link from "next/link";
-import Head from "next/head";
 import MainLayout from "@/layouts/main-layout";
-import { NavBar } from "@/components/navbar";
-import { Categories } from "@/types/category";
+
+import { Categories, Category } from "@/types/category";
 import CustomButton from "@/components/button";
+import { useState } from "react";
+import { ListFood } from "@/components/list-cards";
+import { Foods } from "@/types/food";
+import { QueryClient, dehydrate, useQuery } from "@tanstack/react-query";
 
-type Props = {
-    categories: Categories;
-};
+export default function Home() {
 
-export default function Home({ categories }: Props) {
+    const { data: categories } = useQuery<Categories>({
+        queryKey: ["categories"],
+        queryFn: () =>
+            fetch(`http://localhost:4200/categories`).then((res) => res.json()),
+    });
+
+    const [activeCategory, setActiveCategory] = useState<Category>(
+        categories![0]
+    );
+
+    const {
+        data: foods,
+    } = useQuery({
+        queryKey: ["foods", activeCategory.link],
+        queryFn: () =>
+            fetch(`http://localhost:4200/${activeCategory.link}`).then((res) =>
+                res.json()
+            ),
+        enabled: !!activeCategory,
+    });
+
     return (
         <MainLayout title="Home Page">
-            <NavBar categories={categories} />
-            <CustomButton title="mybutton" onClick={()=>{}}></CustomButton>
-            <div className="p-4 sm:ml-64">
-                <Link href={"/about"}>
-                    <p>About</p>
-                </Link>
+            {categories &&
+                categories.map((el) => (
+                    <CustomButton
+                        key={el.id}
+                        title={el.title}
+                        onClick={() => setActiveCategory(el)}
+                    ></CustomButton>
+                ))}
 
-                <Link href={"/posts"}>
-                    <p>Posts</p>
-                </Link>
-                <h1 className="text-3xl font-bold">Home</h1>
+            <div className="p-4 sm:ml-64">
+                <h1 className="text-3xl font-bold">
+                    {activeCategory && activeCategory.title}
+                </h1>
             </div>
+
+            {foods && <ListFood foods={foods} />}
         </MainLayout>
     );
 }
 
 export async function getServerSideProps() {
-    const data = await fetch("http://localhost:4200/categories");
-    const categories = await data.json();
-    return { props: { categories } };
+    const queryClient = new QueryClient();
+
+    const categories = await queryClient.fetchQuery<Categories>({
+        queryKey: ["categories"],
+        queryFn: () =>
+            fetch("http://localhost:4200/categories").then((res) => res.json()),
+    });
+
+    const first_categories = categories![0];
+
+    if (first_categories)
+        await queryClient.prefetchQuery({
+            queryKey: ["foods", first_categories!.link],
+            queryFn:  () =>
+            fetch(`http://localhost:4200/${first_categories!.link}`).then((res) => res.json()),
+        });
+
+    return {
+        props: {
+            dehydratedState: dehydrate(queryClient),
+        },
+    };
 }

@@ -23,10 +23,10 @@
     ],
     "about": { "title": "Страница про нас" },
     "categories": [
-        { "id": "0", "title": "Пицца", "link": "/pizza" },
-        { "id": "1", "title": "Суши", "link": "/sushi" },
-        { "id": "2", "title": "Напитки", "link": "/drinks" },
-        { "id": "3", "title": "Десерты", "link": "/desserts" }
+        { "id": "0", "title": "Пицца", "link": "pizza" },
+        { "id": "1", "title": "Суши", "link": "sushi" },
+        { "id": "2", "title": "Напитки", "link": "drinks" },
+        { "id": "3", "title": "Десерты", "link": "desserts" }
     ],
     "pizza": [
         {
@@ -248,70 +248,70 @@
         {
             "id": 0,
             "title": "desserts 1",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 1",
             "price": 500
         },
         {
             "id": 1,
             "title": "desserts 2",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 2",
             "price": 500
         },
         {
             "id": 2,
             "title": "desserts 3",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 3",
             "price": 500
         },
         {
             "id": 3,
             "title": "desserts 4",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 4",
             "price": 500
         },
         {
             "id": 4,
             "title": "desserts 5",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 5",
             "price": 500
         },
         {
             "id": 5,
             "title": "desserts 6",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 6",
             "price": 500
         },
         {
             "id": 6,
             "title": "desserts 7",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 7",
             "price": 500
         },
         {
             "id": 7,
             "title": "desserts 8",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 8",
             "price": 500
         },
         {
             "id": 8,
             "title": "desserts 9",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 9",
             "price": 500
         },
         {
             "id": 9,
             "title": "desserts 10",
-            "imageLink": "https://top-fon.com/uploads/posts/2023-01/1675118402_top-fon-com-p-deserti-fon-dlya-prezentatsii-182.jpg",
+            "imageLink": "https://images.freeimages.com/images/large-previews/872/chocolate-chip-muffin-1319139.jpg",
             "description": "desserts 10",
             "price": 500
         }

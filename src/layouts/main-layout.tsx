@@ -1,7 +1,5 @@
 import { NavBar } from "@/components/navbar";
-import { Categories } from "@/types/category";
 import Head from "next/head";
-import Link from "next/link";
 import { ReactNode } from "react";
 
 type Props = {
@@ -9,10 +7,7 @@ type Props = {
     title?: string;
 };
 
-export default function MainLayout({
-    children,
-    title = "food-shop",
-}: Props) {
+export default function MainLayout({ children, title = "food-shop" }: Props) {
     return (
         <>
             <Head>
@@ -24,10 +19,8 @@ export default function MainLayout({
                 />
                 <meta charSet="utf-8" />
             </Head>
-            
+            <NavBar />
             <main>{children}</main>
         </>
     );
 }
-
-
