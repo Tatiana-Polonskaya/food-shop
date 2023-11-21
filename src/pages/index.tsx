@@ -11,7 +11,7 @@ import { Sorted } from "@/types/sorting";
 
 import CustomButton from "@/components/button";
 import { ListFood } from "@/components/list-cards";
-import Sorting from "@/components/sorting";
+import Sorting from "@/components/sorting-button";
 import Filter from "@/components/filter";
 import Loading from "@/components/loader";
 

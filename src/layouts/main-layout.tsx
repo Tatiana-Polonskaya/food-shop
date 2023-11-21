@@ -1,6 +1,7 @@
-import { NavBar } from "@/components/navbar";
 import Head from "next/head";
 import { ReactNode } from "react";
+
+import { NavBar } from "@/components/navbar";
 
 type Props = {
     children: ReactNode;

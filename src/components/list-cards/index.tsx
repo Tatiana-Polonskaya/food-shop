@@ -1,5 +1,7 @@
-import { Foods } from "@/types/food";
 import { Box } from "@mui/material";
+
+import { Foods } from "@/types/food";
+
 import Card from "../card";
 
 type ListFoodProps = {
@@ -7,7 +9,6 @@ type ListFoodProps = {
 };
 
 export function ListFood({ foods }: ListFoodProps) {
-
     return (
         <Box
             display="flex"

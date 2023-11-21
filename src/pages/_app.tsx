@@ -6,9 +6,11 @@ import {
     QueryClientProvider,
 } from "@tanstack/react-query";
 
-import "@/styles/globals.css";
+
 import { ThemeProvider, createTheme } from "@mui/material";
 import { green, orange } from "@mui/material/colors";
+
+import "@/styles/globals.css";
 
 const theme = createTheme({
     palette: {
