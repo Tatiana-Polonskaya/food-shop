@@ -3,6 +3,7 @@ import Head from "next/head";
 import MainLayout from "@/layouts/main-layout";
 import { NavBar } from "@/components/navbar";
 import { Categories } from "@/types/category";
+import CustomButton from "@/components/button";
 
 type Props = {
     categories: Categories;
@@ -12,6 +13,7 @@ export default function Home({ categories }: Props) {
     return (
         <MainLayout title="Home Page">
             <NavBar categories={categories} />
+            <CustomButton title="mybutton" onClick={()=>{}}></CustomButton>
             <div className="p-4 sm:ml-64">
                 <Link href={"/about"}>
                     <p>About</p>

@@ -6,6 +6,7 @@ import {
     Collapse,
     Divider,
     Drawer,
+    IconButton,
     List,
     ListItem,
     ListItemButton,
@@ -39,52 +40,15 @@ export const NavBar = ({ categories }: Props) => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
-                <Toolbar variant="dense">
-                    {small && (
-                        <List>
-                            <ListItem>
-                                <Button
-                                    onClick={handleClick}
-                                    style={{ color: "white" }}
-                                >
-                                    <MenuIcon onClick={handleClick} />
-                                    {open ? <ExpandLess /> : <ExpandMore />}
-                                </Button>
-                                <Typography
-                                    variant="h6"
-                                    color="inherit"
-                                    onClick={() => {
-                                        console.log("logo clicked");
-                                        setOpen(false);
-                                    }}
-                                >
-                                    Geeks for Geeks
-                                </Typography>
-                            </ListItem>
-                            <Collapse in={open} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                    {categories.map((el) => (
-                                        <ListItem key={el.id}>
-                                            <ListItemText primary={el.title} />
-                                        </ListItem>
-                                    ))}
-                                </List>
-                            </Collapse>
-                        </List>
-                    )}
-
-                    {full && (
-                        <>
-                            <Typography variant="h6" color="inherit">
-                                Geeks for Geeks
-                            </Typography>
-                            {categories.map((el) => (
-                                <Button key={el.id} color="inherit">
-                                    {el.title}
-                                </Button>
-                            ))}
-                        </>
-                    )}
+                <Toolbar>
+                    <Typography
+                        variant="h6"
+                        component="div"
+                        sx={{ flexGrow: 1 }}
+                    >
+                        Food Shop
+                    </Typography>
+                    <Button color="inherit">Go to Github</Button>
                 </Toolbar>
             </AppBar>
         </Box>
