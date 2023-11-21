@@ -41,63 +41,63 @@
             "title": "pizza 2",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 2",
-            "price": 500
+            "price": 600
         },
         {
             "id": 2,
             "title": "pizza 3",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 3",
-            "price": 500
+            "price": 700
         },
         {
             "id": 3,
             "title": "pizza 4",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 4",
-            "price": 500
+            "price": 800
         },
         {
             "id": 4,
             "title": "pizza 5",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 5",
-            "price": 500
+            "price": 900
         },
         {
             "id": 5,
             "title": "pizza 6",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 6",
-            "price": 500
+            "price": 1000
         },
         {
             "id": 6,
             "title": "pizza 7",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 7",
-            "price": 500
+            "price": 1100
         },
         {
             "id": 7,
             "title": "pizza 8",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 8",
-            "price": 500
+            "price": 1200
         },
         {
             "id": 8,
             "title": "pizza 9",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 9",
-            "price": 500
+            "price": 1300
         },
         {
             "id": 9,
             "title": "pizza 10",
             "imageLink": "https://web-restoran.ru/wp-content/uploads/2023/06/syr-pomidory-olivki-perec-picca-fast-food-pizza-pepper-tomato-cheese-olives-scaled-1-2048x1415.jpg",
             "description": "pizza 10",
-            "price": 500
+            "price": 1400
         }
     ],
     "sushi": [
