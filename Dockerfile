@@ -53,6 +53,9 @@ RUN chown nextjs:nodejs .next
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY db.json .
+
+RUN npm install -g json-server --registry=https://registry.npm.taobao.org
 
 USER nextjs
 
@@ -65,4 +68,4 @@ ENV HOSTNAME "0.0.0.0"
 # ADD start.sh /
 # RUN chmod +x /start.sh
 # CMD [ "./start.sh" ]
-CMD [ "npm", "run", "mock", "&", "npm", "run", "dev" ]
+CMD [ "npm", "run", "mock", "&", "npm", "start" ]
