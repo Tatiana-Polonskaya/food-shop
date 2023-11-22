@@ -27,7 +27,7 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN npm run build
+RUN yarn build
 
 # If using npm comment out above and use below instead
 # RUN npm run build
@@ -53,19 +53,15 @@ RUN chown nextjs:nodejs .next
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-COPY db.json .
-
-RUN npm install -g json-server --registry=https://registry.npm.taobao.org
 
 USER nextjs
 
-EXPOSE 3000 4200
+EXPOSE 3000
 
 ENV PORT 3000
-
+# set hostname to localhost
 ENV HOSTNAME "0.0.0.0"
 
-# ADD start.sh /
-# RUN chmod +x /start.sh
-# CMD [ "./start.sh" ]
-CMD [ "npm", "run", "mock", "&", "npm", "start" ]
+# server.js is created by next build from the standalone output
+# https://nextjs.org/docs/pages/api-reference/next-config-js/output
+CMD ["node", "server.js"]
